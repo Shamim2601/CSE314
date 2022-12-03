@@ -26,4 +26,5 @@ tr "." "," file.txt [changes all . to ,]
 
 awk "{print NF}" FS=, | uniq   [no of comma separated fields unique]
 
+sed -i "2,9d" f.txt to remove lines permanently
 
