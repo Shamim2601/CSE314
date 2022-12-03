@@ -1,0 +1,29 @@
+in linux /(root) then home then user
+
+cd - dile just ager directory te jbe
+
+touch .hid.txt likhle hid.txt name e hidden file create hbe jeta dkhte ls -a cmd dite hbe
+
+mv a.cpp b.cpp is a way to rename
+
+cat one.txt|wc -l dile #line dekhabe
+
+grep;grep -i;grep -v for searching pattern in a file
+
+((x=x+1)) duita first bracket er vitore rakhle math er moto kaj hbe
+
+> dile overwrite; >> dile append
+
+sudo su dile super user hisebe #
+
+/sys = system variables gulo dekha jbe
+
+xdg-open <file-name>     to open any file
+
+grep "h"<<<hello == hello er sathe milabe, not with file named hello
+
+tr "." "," file.txt [changes all . to ,]
+
+awk "{print NF}" FS=, | uniq   [no of comma separated fields unique]
+
+
