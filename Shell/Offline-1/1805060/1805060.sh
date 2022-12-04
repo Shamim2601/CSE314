@@ -18,10 +18,11 @@ do
 if [[ -d "180512$i" ]];then
     score=$max_score
     if [[ -f "180512$i/180512$i.sh" ]];then
-        bash 180512$i/180512$i.sh | diff -w ../AcceptedOutput.txt - >180512$i/diff.txt
-        count=$(grep '[<>]' 180512$i/diff.txt | wc -l)
+        count=$(bash 180512$i/180512$i.sh | diff -w ../AcceptedOutput.txt - | grep '[<>]' - | wc -l)
         score=$((score-count*5))
-        rm 180512$i/diff.txt
+        if (($score<0));then
+            score=0
+        fi
     else
         score=0
     fi
